@@ -7,6 +7,7 @@ const title = document.createElement('h1');
 title.textContent = "Список задач";
 title.className = 'title';
 list.appendChild(title);
+
 //Контейнер для поля ввода
 const box = document.createElement('div');
 box.className = 'box';
@@ -22,5 +23,12 @@ btn.className = 'btn';
 btn.textContent = "Добавить дело"
 box.appendChild(btn);
 
+//  /* */
+const tasks = [
+    {id: 1, title: "Сделать покупки", done: false},
+    {id: 2, title: "Прочитать книгу", done: true},
+    {id: 3, title: "Подготовить отчет", done: false},
+    {id: 4, title: "Записаться к врачу", done: false},
+]
 
 element.appendChild(list);
