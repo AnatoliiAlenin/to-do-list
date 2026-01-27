@@ -31,4 +31,38 @@ const tasks = [
     {id: 4, title: "Записаться к врачу", done: false},
 ]
 
+// Шаблон
+//Обертка для списка дел
+const wrap = document.createElement('div');
+wrap.className = 'wrap';
+list.appendChild(wrap)
+
+const conteiner1 = document.createElement('div');
+conteiner1.className = 'conteiner';
+wrap.appendChild(conteiner1)
+
+const order = document.createElement('p');
+order.className = 'order';
+order.textContent = "1";
+conteiner1.appendChild(order);
+
+const task = document.createElement('p');
+task.className = 'task';
+task.textContent = "Сделать покупки";
+conteiner1.appendChild(task);
+
+const conteiner2 = document.createElement('div');
+conteiner2.className = 'conteiner';
+wrap.appendChild(conteiner2)
+
+const prove = document.createElement('input');
+prove.type = 'checkbox';
+prove.className = 'prove';
+conteiner2.appendChild(prove);
+
+const del = document.createElement('p');
+del.className = 'del';
+del.textContent = " - ";
+conteiner2.appendChild(del);
+
 element.appendChild(list);
