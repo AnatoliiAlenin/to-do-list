@@ -69,9 +69,25 @@ element.appendChild(list);
 
 
 // Функция вытаскивает данные из массива обьектов
-function elementArray(arr, key) {
+function elementId(arr, key) {
     return arr.map(item => item[key]);
 }
 
-const tail = elementArray(tasks, 'title');
+const idi = elementId(tasks, 'id');
+console.log(idi);
+
+function elementTitle(arr, key) {
+    return arr.map(item => item[key]);
+}
+
+const tail = elementTitle(tasks, 'title');
 console.log(tail);
+
+function elementDone(arr, key) {
+    return arr.map(item => item[key]);
+}
+
+const buil = elementDone(tasks, 'done');
+console.log(buil);
+
+// 
