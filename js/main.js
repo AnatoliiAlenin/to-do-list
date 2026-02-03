@@ -66,3 +66,12 @@ del.textContent = " - ";
 conteiner2.appendChild(del);
 
 element.appendChild(list);
+
+
+// Функция вытаскивает данные из массива обьектов
+function elementArray(arr, key) {
+    return arr.map(item => item[key]);
+}
+
+const tail = elementArray(tasks, 'title');
+console.log(tail);
