@@ -90,4 +90,4 @@ function elementDone(arr, key) {
 const buil = elementDone(tasks, 'done');
 console.log(buil);
 
-// 
+// Функция создания элемента спика
